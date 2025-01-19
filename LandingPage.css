@@ -1,0 +1,271 @@
+ * {
+            box-sizing: border-box;
+            margin: 0;
+
+        }
+
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 1.2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .main-nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 4rem;
+            margin: 0 auto;
+            background: linear-gradient(45deg, rgba(137, 135, 135, 0.496),rgb(85, 227, 213));
+            color: turquoise;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            z-index: 222;
+        }
+
+        .main-nav ul {
+            display: flex;
+            list-style-type: none;
+            gap: 10px;
+        }
+
+        .main-nav ul li a {
+            color: white;
+            text-decoration: none;
+            /*clearing the underline*/
+            padding: 0.5rem;
+            transform-origin: center;
+            /*to control how the scaling behaves.*/
+            transition: transform 0.3s ease;
+        }
+
+        .main-nav ul li a:hover {
+            color: rgb(255, 13, 0);
+            margin: 0;
+        }
+
+        .main-nav #acd {
+            color: white;
+        }
+
+        .main-nav img {
+            height: 30px;
+            width: 30px;
+            padding: 1px;
+            margin: 1px;
+            border-radius: 5px;
+        }
+
+        .main-nav h1 {
+            display: flex;
+        }
+
+        .main-nav .active {
+            display: flex;
+        }
+        #name{
+            filter: drop-shadow(15px 15px 45px rgba(4, 4, 4, 0.803));
+            /* background-color: rgba(255, 255, 255, 0.42);
+            -webkit-backdrop-filter: blur(25px) brightness(0.9);
+            backdrop-filter: blur(25px) brightness(0.9); */
+        }
+       
+        .container {
+            background: white url(office1.jpg) no-repeat center;
+            height: 100vh;
+            /*vertical height*/
+            background-size: cover;
+            /*covers whole screen area*/
+            color: black;
+        }
+
+        .container-wrapper {
+
+            background-color: rgba(212, 205, 205, 0.205);
+            height: 100%;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .click {
+            background-color: rgb(67, 173, 162);
+            color: black;
+            font-size: 1rem;
+            padding: 10px auto;
+            font-size: 1.2rem;
+        }
+
+        .click:hover {
+            color: red;
+        }
+
+        #About_Us,
+        #Courses {
+            background: rgba(23, 23, 23, 0.808) url(office1.jpg) no-repeat center;
+            height: 100vh;
+            margin: 0 auto;
+            width: auto;
+            padding: 1.2rem;
+            background-size: cover;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            list-style-type: none;
+
+        }
+
+        #About_Us h2 {
+            font-size: 3rem;
+            margin: 20px auto;
+            padding: 1.2rem;
+            line-height: 1.2rem;
+            background-color: rgba(255, 255, 255, 0.217);
+            -webkit-backdrop-filter: blur(15px) brightness(0.9);
+            backdrop-filter: blur(15px) brightness(0.9);
+        }
+
+        #About_Us p {
+            padding: 1.9rem;
+            /* Adds spacing inside the element */
+            line-height: 2rem;
+            background-color: rgba(255, 255, 255, 0.217);
+            /* Ensures the box-shadow is visible */
+            -webkit-backdrop-filter: blur(15px) brightness(0.9);
+            backdrop-filter: blur(15px) brightness(0.9);
+            box-shadow: 10px 4px 8px rgba(19, 11, 11, 0.662);
+            /* Adds the shadow */
+
+        }
+
+
+        #Courses h2 {
+            font-size: 2.5rem;
+            margin: 20px auto;
+            padding: 1.2rem;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.217);
+            -webkit-backdrop-filter: blur(25px) brightness(0.9);
+            backdrop-filter: blur(25px) brightness(0.9);
+            text-align: center;
+        }
+
+        #Courses ul {
+            list-style-type: none;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 1.2rem;
+            height: auto;
+
+        }
+
+        #Courses li h3 {
+            font-size: 2rem;
+            text-align: center;
+            color: turquoise;
+            padding: 20px;
+        }
+
+        #Courses ul li {
+            text-align: center;
+            padding: 1rem;
+            background-color: rgba(255, 255, 255, 0.217);
+            -webkit-backdrop-filter: blur(25px) brightness(1);
+            backdrop-filter: blur(25px) brightness(1);
+
+        }
+
+        #Courses button {
+            display: block;
+            background-color: rgb(11, 176, 11);
+            width: 100%;
+            font-size: 1.7rem;
+            margin: 20px auto;
+            border-color: transparent;
+        }
+
+        #Courses button:hover {
+            color: red;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+
+        #Contact_Us {
+            height: 100%;
+            background-color: turquoise;
+            padding: 2rem;
+
+        }
+
+        #Contact_Us ul {
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            list-style-type: none;
+            text-decoration: none;
+
+        }
+
+        #Contact_Us ul li {
+
+            margin: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        #Contact_Us ul li:hover {
+            transform: scale(1.1);
+
+        }
+
+        #Contact_Us ul li i {
+            padding: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .main-nav {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                background-color: #333;
+                width: 100%;
+                text-align: center;
+            }
+
+            .main-nav li {
+                margin: 15px 0;
+            }          
+
+            #Courses ul {
+                grid-template-columns: repeat(auto-fill, minmax(2, 1fr));
+                /* 2 columns on smaller screens */
+                gap:20px;
+                padding:20px;
+
+            }
+        }
+
+        @media (max-width: 480px) {
+            
+            #Courses {
+                grid-template-columns: 1fr;
+                /* 1 column on very small screens */
+            }
+
+            #Courses ul {
+                grid-template-columns: 1fr;
+                /* 1 column on very small screens */
+            }
+        }
