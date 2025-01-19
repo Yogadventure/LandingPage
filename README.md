@@ -1,2 +1,5 @@
-# RandomAPIConnect
-Fetch a random user profile every time You click on the button from a Random User API.
+# A Landing Page
+This is my code for my first landing page project.
+
+Tech stack:
+HTML,CSS
